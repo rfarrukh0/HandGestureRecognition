@@ -30,7 +30,7 @@ while True:
     if not ret:
         break
 
-        # convert to RGB for mediapipe processing
+        # convert to RGB for mediapipe
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     results = hands.process(rgb_frame)
 

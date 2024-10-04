@@ -39,10 +39,10 @@ while True:
     if hand_landmarks:
         draw_landmarks(frame, hand_landmarks)
 
-    # display the FPS on the frame
+    # display the FPS frame
     cv2.putText(frame, f'FPS: {int(fps)}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
-    # display the gesture on the frame
+    # display gesture frame
     if gesture:
         cv2.putText(frame, f'Gesture: {gesture}', (10, 70), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 

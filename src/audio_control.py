@@ -8,7 +8,7 @@ interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 
 def adjust_volume(direction):
-    # adjust volume based on direction (up or down)
+    # volume adjust work in progress
     current_volume = volume.GetMasterVolumeLevelScalar()
     if direction == "up":
         volume.SetMasterVolumeLevelScalar(min(current_volume + 0.1, 1.0), None)

@@ -17,7 +17,7 @@ def detect_gesture(frame, hands):
             thumb_tip_x = hand_landmarks.landmark[4].x
             index_finger_tip_x = hand_landmarks.landmark[8].x
 
-            # check if thumb is to the left of the index finger (open palm gesture)
+            # check if thumb is to the left of the index finger(open palm, implement coord future)
             if thumb_tip_x < index_finger_tip_x:
                 return "open palm", hand_landmarks
     return None, None
